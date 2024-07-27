@@ -5,21 +5,21 @@
 class Grol < Formula
   desc "Go Repl Open Language: simple, small but powerful interpreted language in Go"
   homepage "https://grol.io/"
-  version "0.25.0-pre1"
+  version "0.25.0-pre2"
   license "Apache-2.0"
 
   on_macos do
     on_intel do
-      url "https://github.com/grol-io/grol/releases/download/v0.25.0-pre1/grol_0.25.0-pre1_darwin_amd64.zip"
-      sha256 "fd6c3e5417710c7f5e1933ea8fa2fa998220cc170b222a88a6be0e6487acde77"
+      url "https://github.com/grol-io/grol/releases/download/v0.25.0-pre2/grol_0.25.0-pre2_darwin_amd64.zip"
+      sha256 "0271e2663525cecf02ddd7024ee703151b2416fd1249d7ef56642328486cf142"
 
       def install
         bin.install "grol"
       end
     end
     on_arm do
-      url "https://github.com/grol-io/grol/releases/download/v0.25.0-pre1/grol_0.25.0-pre1_darwin_arm64.zip"
-      sha256 "a475ec0e3699c1dd540b33a30b178b16be2a3cab32b4002f062329c195b46bd6"
+      url "https://github.com/grol-io/grol/releases/download/v0.25.0-pre2/grol_0.25.0-pre2_darwin_arm64.zip"
+      sha256 "751ccf2f222d7cef6b6a9ae3316220dc7fd8e3674b9ac7236dc36ccb449824e0"
 
       def install
         bin.install "grol"
@@ -30,8 +30,8 @@ class Grol < Formula
   on_linux do
     on_intel do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/grol-io/grol/releases/download/v0.25.0-pre1/grol_0.25.0-pre1_linux_amd64.tar.gz"
-        sha256 "912a9b0992240dc35ed6516afb15e156160af5f787b7cb36dae2a9157c1cd480"
+        url "https://github.com/grol-io/grol/releases/download/v0.25.0-pre2/grol_0.25.0-pre2_linux_amd64.tar.gz"
+        sha256 "9276630c072000fe24e31644c1815f876e292bbeb12fadd438139d63fb02e194"
 
         def install
           bin.install "grol"
@@ -40,8 +40,8 @@ class Grol < Formula
     end
     on_arm do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/grol-io/grol/releases/download/v0.25.0-pre1/grol_0.25.0-pre1_linux_arm64.tar.gz"
-        sha256 "6bf07ba28513611d5fd9adad155a38e2d353e5fdb4a5bc6a9a64263534ff15df"
+        url "https://github.com/grol-io/grol/releases/download/v0.25.0-pre2/grol_0.25.0-pre2_linux_arm64.tar.gz"
+        sha256 "54e018bb071040f27e32506b53d42c201fcf1dc075fc4f4c32181745cc52e8fe"
 
         def install
           bin.install "grol"

@@ -5,21 +5,21 @@
 class Grol < Formula
   desc "Go Repl Open Language: simple, small but powerful interpreted language in Go"
   homepage "https://grol.io/"
-  version "0.70.2"
+  version "0.70.3"
   license "Apache-2.0"
 
   on_macos do
     on_intel do
-      url "https://github.com/grol-io/grol/releases/download/v0.70.2/grol_0.70.2_darwin_amd64.zip"
-      sha256 "cb24ebaadbd7547247e76c73f4143431e718f2e0e33b5965c5e68254b1a7454f"
+      url "https://github.com/grol-io/grol/releases/download/v0.70.3/grol_0.70.3_darwin_amd64.zip"
+      sha256 "46011405be212b2206ab6bba9a222b6f4893cb8200c8ebf5c48f2fa1631d7a22"
 
       def install
         bin.install "grol"
       end
     end
     on_arm do
-      url "https://github.com/grol-io/grol/releases/download/v0.70.2/grol_0.70.2_darwin_arm64.zip"
-      sha256 "42199736e6d149b1530a9577e0e154289e45788cf30e681afeffd60b53ee0ceb"
+      url "https://github.com/grol-io/grol/releases/download/v0.70.3/grol_0.70.3_darwin_arm64.zip"
+      sha256 "9819ff24f0119567365af87888bf7ef4628b11bee87fa4df77b6999744aa7185"
 
       def install
         bin.install "grol"
@@ -30,8 +30,8 @@ class Grol < Formula
   on_linux do
     on_intel do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/grol-io/grol/releases/download/v0.70.2/grol_0.70.2_linux_amd64.tar.gz"
-        sha256 "6f64ac322ca11a3d687f5c77cde133573e8571aa470cda0745591bf85dde1efe"
+        url "https://github.com/grol-io/grol/releases/download/v0.70.3/grol_0.70.3_linux_amd64.tar.gz"
+        sha256 "519e41b902649adae6acd35bfe4b69964fd1b31c73cdf02dee692b86cfce5b46"
 
         def install
           bin.install "grol"
@@ -40,8 +40,8 @@ class Grol < Formula
     end
     on_arm do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/grol-io/grol/releases/download/v0.70.2/grol_0.70.2_linux_arm64.tar.gz"
-        sha256 "d310d8df9f87039596799a04a1878c345ae313940e86af7e626643a3b04ed1db"
+        url "https://github.com/grol-io/grol/releases/download/v0.70.3/grol_0.70.3_linux_arm64.tar.gz"
+        sha256 "303ea2186187193f65d5a6ad0fe3634b3e5d151110cabf0f1315a11df53d85a1"
 
         def install
           bin.install "grol"

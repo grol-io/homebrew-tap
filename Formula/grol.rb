@@ -5,21 +5,21 @@
 class Grol < Formula
   desc "Go Repl Open Language: simple, small but powerful interpreted language in Go"
   homepage "https://grol.io/"
-  version "0.83.0"
+  version "0.83.1"
   license "Apache-2.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/grol-io/grol/releases/download/v0.83.0/grol_0.83.0_darwin_amd64.zip"
-      sha256 "8464d5ed5188ec4251d73eb993f73e43722776c5c5ddd706ab5fafb7a512eb41"
+      url "https://github.com/grol-io/grol/releases/download/v0.83.1/grol_0.83.1_darwin_amd64.zip"
+      sha256 "8b2b3297db0dea1f61df5dd65aaf0823dafa7850bf0f48597547a42d94658ead"
 
       def install
         bin.install "grol"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/grol-io/grol/releases/download/v0.83.0/grol_0.83.0_darwin_arm64.zip"
-      sha256 "02dde411ff7e813c3cca913c70ea2c593ad78252c84050df11edd7564ce6b3ba"
+      url "https://github.com/grol-io/grol/releases/download/v0.83.1/grol_0.83.1_darwin_arm64.zip"
+      sha256 "165d3722e2b4ec03469fcf5f1107bbf0297bdd7329f89d187d2981c1c4cd1042"
 
       def install
         bin.install "grol"
@@ -30,8 +30,8 @@ class Grol < Formula
   on_linux do
     if Hardware::CPU.intel?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/grol-io/grol/releases/download/v0.83.0/grol_0.83.0_linux_amd64.tar.gz"
-        sha256 "34830ff7d8aabc4abd7e84a5f5b192f253b68aaf66370b43917910b9ba0a4cf5"
+        url "https://github.com/grol-io/grol/releases/download/v0.83.1/grol_0.83.1_linux_amd64.tar.gz"
+        sha256 "3a9bd752e2f664915f9b7daaf135d0d3d268344b629fb9ef50e34ec4986e1f8b"
 
         def install
           bin.install "grol"
@@ -40,8 +40,8 @@ class Grol < Formula
     end
     if Hardware::CPU.arm?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/grol-io/grol/releases/download/v0.83.0/grol_0.83.0_linux_arm64.tar.gz"
-        sha256 "4096da4492bd2e95beedaab32217c9dc607bd8174f915378b0baf2ba53e58e28"
+        url "https://github.com/grol-io/grol/releases/download/v0.83.1/grol_0.83.1_linux_arm64.tar.gz"
+        sha256 "f6112fca64c031bc7bb9958973d61ee1c1289fc18ecca2e92d96e0d61506ebcb"
 
         def install
           bin.install "grol"

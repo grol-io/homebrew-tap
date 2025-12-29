@@ -5,21 +5,21 @@
 class Vm < Formula
   desc "Go Repl Open Language: simple, small but powerful VM language in Go"
   homepage "https://grol.io/"
-  version "0.12.0"
+  version "0.12.1"
   license "Apache-2.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/grol-io/vm/releases/download/v0.12.0/vm_0.12.0_darwin_amd64.zip"
-      sha256 "6d8569fcc643ea65105c4c9f8b74a56d06a7c18329cf04d31f12c5847642a33a"
+      url "https://github.com/grol-io/vm/releases/download/v0.12.1/vm_0.12.1_darwin_amd64.zip"
+      sha256 "af6ab8e8a062ecb68d60a6005f469bbd991436ee7197cdb4ec24cb57676b922b"
 
       def install
         bin.install "vm"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/grol-io/vm/releases/download/v0.12.0/vm_0.12.0_darwin_arm64.zip"
-      sha256 "80e45874a311e83a1c30903c64ec29559af14dc6f3519f3dbc862b96343a6727"
+      url "https://github.com/grol-io/vm/releases/download/v0.12.1/vm_0.12.1_darwin_arm64.zip"
+      sha256 "a0cd1026e115d79387f930173374ddafc75be0204f9e31605b43237729184353"
 
       def install
         bin.install "vm"
@@ -29,15 +29,15 @@ class Vm < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/grol-io/vm/releases/download/v0.12.0/vm_0.12.0_linux_amd64.tar.gz"
-      sha256 "3621fb709c3567f4b794d4fd51c4fda78c846b7088be0853dba331f6c1a87bdc"
+      url "https://github.com/grol-io/vm/releases/download/v0.12.1/vm_0.12.1_linux_amd64.tar.gz"
+      sha256 "c3fa7b70e67cf1121dccb949c92d1706383c005322885e5d2f09105e3f98df10"
       def install
         bin.install "vm"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/grol-io/vm/releases/download/v0.12.0/vm_0.12.0_linux_arm64.tar.gz"
-      sha256 "b29595a7fc215083b9b8eb622d76d52d42150b236303bdbdaf4c36f7e2970080"
+      url "https://github.com/grol-io/vm/releases/download/v0.12.1/vm_0.12.1_linux_arm64.tar.gz"
+      sha256 "b430a107331697ae3555b8b41b6800d4f984056e320b7e145c1705bf99de907b"
       def install
         bin.install "vm"
       end

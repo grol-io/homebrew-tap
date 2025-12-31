@@ -5,21 +5,21 @@
 class Vm < Formula
   desc "Go Repl Open Language: simple, small but powerful VM language in Go"
   homepage "https://grol.io/"
-  version "0.15.0"
+  version "0.15.1"
   license "Apache-2.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/grol-io/vm/releases/download/v0.15.0/vm_0.15.0_darwin_amd64.zip"
-      sha256 "45e717aa27244886fb562228c5034731935dfe72bfd2109ecba05db03b349d54"
+      url "https://github.com/grol-io/vm/releases/download/v0.15.1/vm_0.15.1_darwin_amd64.zip"
+      sha256 "14acff3f36b273ccf0741fe605add0c7a13db71db3291b5b1c9c2236d764ef52"
 
       def install
         bin.install "vm"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/grol-io/vm/releases/download/v0.15.0/vm_0.15.0_darwin_arm64.zip"
-      sha256 "845fd74beca2f5c1d8059e0db02c0e82348e06b3a810abf2ab5583f4e9eb885c"
+      url "https://github.com/grol-io/vm/releases/download/v0.15.1/vm_0.15.1_darwin_arm64.zip"
+      sha256 "cf4f69f5aadb579eb379e2497dbf1708c726db7594f25eeaa1787921bcd3d13d"
 
       def install
         bin.install "vm"
@@ -29,15 +29,15 @@ class Vm < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/grol-io/vm/releases/download/v0.15.0/vm_0.15.0_linux_amd64.tar.gz"
-      sha256 "b1a9c6cd534637fa007aa005c05361cc58bfe6602cf506ec654cfd840440a97e"
+      url "https://github.com/grol-io/vm/releases/download/v0.15.1/vm_0.15.1_linux_amd64.tar.gz"
+      sha256 "0dd981562756c0b92437e5e83b3fd4a655b1c8d70debaecb2540e403091d5a00"
       def install
         bin.install "vm"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/grol-io/vm/releases/download/v0.15.0/vm_0.15.0_linux_arm64.tar.gz"
-      sha256 "f31783c78564dbcfc39efff3d56dd69a67fab52709e44d3874c46ca52fbbee0a"
+      url "https://github.com/grol-io/vm/releases/download/v0.15.1/vm_0.15.1_linux_arm64.tar.gz"
+      sha256 "e299ad986c410b0eea6647c616932531bc22dd2f5930d4c26b800dfe7b835449"
       def install
         bin.install "vm"
       end

@@ -5,21 +5,21 @@
 class Vm < Formula
   desc "Go Repl Open Language: simple, small but powerful VM language in Go"
   homepage "https://grol.io/"
-  version "0.25.1"
+  version "0.26.0"
   license "Apache-2.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/grol-io/vm/releases/download/v0.25.1/vm_0.25.1_darwin_amd64.zip"
-      sha256 "bcb5675e4edda65a3498c30407e198d97d5ad9aa62409c370087555c2c7d76b8"
+      url "https://github.com/grol-io/vm/releases/download/v0.26.0/vm_0.26.0_darwin_amd64.zip"
+      sha256 "85579b35ae87915e0e0c0d2ffdb991909f995f51d31173938927b006b5fc7be4"
 
       def install
         bin.install "vm"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/grol-io/vm/releases/download/v0.25.1/vm_0.25.1_darwin_arm64.zip"
-      sha256 "4ad4982e360686f78f5e74bd25fcaf9c4958a7836631d17033c29b7ffec26655"
+      url "https://github.com/grol-io/vm/releases/download/v0.26.0/vm_0.26.0_darwin_arm64.zip"
+      sha256 "3681d4d2626d361db902d0646ec976283e1d425287c16ec59471bdd55aa588bb"
 
       def install
         bin.install "vm"
@@ -29,15 +29,15 @@ class Vm < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/grol-io/vm/releases/download/v0.25.1/vm_0.25.1_linux_amd64.tar.gz"
-      sha256 "76515f9df8dea6649016ff1e2fc80ca656c5ce773def4b0ce98761908feede23"
+      url "https://github.com/grol-io/vm/releases/download/v0.26.0/vm_0.26.0_linux_amd64.tar.gz"
+      sha256 "54975d5db269cc27f2461438bf3a4a7ac3488b3f6cb9467167c5aa02424968b3"
       def install
         bin.install "vm"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/grol-io/vm/releases/download/v0.25.1/vm_0.25.1_linux_arm64.tar.gz"
-      sha256 "5c1cf81a90b45d0ad2eb8ed41cbf4ee66e99930cbd4f61da156cb6729a0bff68"
+      url "https://github.com/grol-io/vm/releases/download/v0.26.0/vm_0.26.0_linux_arm64.tar.gz"
+      sha256 "5b78c32a1e25b6ebc733b398dd2e32f2ee01a79b3bb718ab1c43dbf3391dc40b"
       def install
         bin.install "vm"
       end

@@ -5,21 +5,21 @@
 class Vm < Formula
   desc "Go Repl Open Language: simple, small but powerful VM language in Go"
   homepage "https://grol.io/"
-  version "0.29.0"
+  version "0.30.0"
   license "Apache-2.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/grol-io/vm/releases/download/v0.29.0/vm_0.29.0_darwin_amd64.zip"
-      sha256 "3536a5bfc1bfe8bb189f2c0f689a7fd686ec383e17af4e3ecaf8d42478e300e8"
+      url "https://github.com/grol-io/vm/releases/download/v0.30.0/vm_0.30.0_darwin_amd64.zip"
+      sha256 "08da62939df9b1d8cc617dfd00acb0fabc3607a68f41bc10fb7d53369125ffde"
 
       def install
         bin.install "vm"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/grol-io/vm/releases/download/v0.29.0/vm_0.29.0_darwin_arm64.zip"
-      sha256 "ce752104416544ce5e90225f57524ed25ba33e8db0b26fefc1bd780dba656af6"
+      url "https://github.com/grol-io/vm/releases/download/v0.30.0/vm_0.30.0_darwin_arm64.zip"
+      sha256 "00e954f5a12553b172c25fe89e77b7d0040f84cd358e9dc982b6ec757d688601"
 
       def install
         bin.install "vm"
@@ -29,15 +29,15 @@ class Vm < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/grol-io/vm/releases/download/v0.29.0/vm_0.29.0_linux_amd64.tar.gz"
-      sha256 "c54eae778fe2f4a93ecf732108d949db48192a96ce2885c3f6e5cf3a6279e30e"
+      url "https://github.com/grol-io/vm/releases/download/v0.30.0/vm_0.30.0_linux_amd64.tar.gz"
+      sha256 "be41ba1a7ebc1c8a385204b41c3427d28f92b9e5f37de811e4aec29a44f60053"
       def install
         bin.install "vm"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/grol-io/vm/releases/download/v0.29.0/vm_0.29.0_linux_arm64.tar.gz"
-      sha256 "059183e23e3aa811f4d8d940b15b97890ca56a99ed89041acd204a862c6c8f3f"
+      url "https://github.com/grol-io/vm/releases/download/v0.30.0/vm_0.30.0_linux_arm64.tar.gz"
+      sha256 "b2ed91f2b6ed01738cdd53653d56b5e89dc322e60380e0f21436a9323503df8c"
       def install
         bin.install "vm"
       end

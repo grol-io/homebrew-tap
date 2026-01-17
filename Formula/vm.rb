@@ -5,21 +5,21 @@
 class Vm < Formula
   desc "Go Repl Open Language: simple, small but powerful VM language in Go"
   homepage "https://grol.io/"
-  version "0.33.1"
+  version "0.33.2"
   license "Apache-2.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/grol-io/vm/releases/download/v0.33.1/vm_0.33.1_darwin_amd64.zip"
-      sha256 "658ea02f1980917d932fe3f53ab068268102c1b00b4d68c65a567bcd637efabe"
+      url "https://github.com/grol-io/vm/releases/download/v0.33.2/vm_0.33.2_darwin_amd64.zip"
+      sha256 "7878d4913aa0a720dad0457e18d34de4e2aedc5314e503eb5362268c88da34fd"
 
       def install
         bin.install "vm"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/grol-io/vm/releases/download/v0.33.1/vm_0.33.1_darwin_arm64.zip"
-      sha256 "c84de6158c4549d932ffdebf2981f3d994472f19388ea8aed5ee1215fa6c7f34"
+      url "https://github.com/grol-io/vm/releases/download/v0.33.2/vm_0.33.2_darwin_arm64.zip"
+      sha256 "557ca5907e13358b4a28e138e5341198392e1b1fb4b5ee75c71f6c8badf6e666"
 
       def install
         bin.install "vm"
@@ -29,15 +29,15 @@ class Vm < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/grol-io/vm/releases/download/v0.33.1/vm_0.33.1_linux_amd64.tar.gz"
-      sha256 "ceca4f62075e644ffb6165c24ec13d419d584062cc1651dcee21dec4115e7654"
+      url "https://github.com/grol-io/vm/releases/download/v0.33.2/vm_0.33.2_linux_amd64.tar.gz"
+      sha256 "6220e2cff21e6c6bbbbc98ae11f85596160667d46d4a4f24ebf4404f1a75afaa"
       def install
         bin.install "vm"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/grol-io/vm/releases/download/v0.33.1/vm_0.33.1_linux_arm64.tar.gz"
-      sha256 "10ed804520c5a3bd4fd1f3d7d9279afc6ed30f3afbacd9b3840f8a7d3aa99b77"
+      url "https://github.com/grol-io/vm/releases/download/v0.33.2/vm_0.33.2_linux_arm64.tar.gz"
+      sha256 "6e03f8cba444f62382ba4be721dc048d6d4331d73bc22a6ebb2f4746983dac26"
       def install
         bin.install "vm"
       end

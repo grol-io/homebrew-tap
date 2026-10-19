@@ -5,21 +5,21 @@
 class Grol < Formula
   desc "Go Repl Open Language: simple, small but powerful interpreted language in Go"
   homepage "https://grol.io/"
-  version "0.101.4"
+  version "0.102.0"
   license "Apache-2.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/grol-io/grol/releases/download/v0.101.4/grol_0.101.4_darwin_amd64.zip"
-      sha256 "448a75965bc755039458289ed8f644dd15dc4eb72d9420ea383d080ff22c6b18"
+      url "https://github.com/grol-io/grol/releases/download/v0.102.0/grol_0.102.0_darwin_amd64.zip"
+      sha256 "fdd2748a9107c3f71a21e62f8b0931413fa15a162732f12991c60465079a16e1"
 
       define_method(:install) do
         bin.install "grol"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/grol-io/grol/releases/download/v0.101.4/grol_0.101.4_darwin_arm64.zip"
-      sha256 "d1558da02194ed22d31edd6d85cf89c33970597db3f3398d3a0b67eec3cec4f7"
+      url "https://github.com/grol-io/grol/releases/download/v0.102.0/grol_0.102.0_darwin_arm64.zip"
+      sha256 "6025dba610ba3c6b61cda552f52fd223ad212098df25e6c4d914a33278b8334c"
 
       define_method(:install) do
         bin.install "grol"
@@ -29,15 +29,15 @@ class Grol < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/grol-io/grol/releases/download/v0.101.4/grol_0.101.4_linux_amd64.tar.gz"
-      sha256 "c52bc98233fd4a1ef252037b0f3d23f2f7cb819757ad0c9c0a2275b5f035f910"
+      url "https://github.com/grol-io/grol/releases/download/v0.102.0/grol_0.102.0_linux_amd64.tar.gz"
+      sha256 "0ef4e0f28319d1faedc265afcf5125d8e695e5016d311470c6d67d21d0ede33d"
       define_method(:install) do
         bin.install "grol"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/grol-io/grol/releases/download/v0.101.4/grol_0.101.4_linux_arm64.tar.gz"
-      sha256 "b554742123043dc70833929c18bad624c56af76268b27bfdfaf2642999c26da8"
+      url "https://github.com/grol-io/grol/releases/download/v0.102.0/grol_0.102.0_linux_arm64.tar.gz"
+      sha256 "282073dc4d8765675d3389f0a99d38185f3ffdc6ae4d31ef04f40b1ff4b6f15d"
       define_method(:install) do
         bin.install "grol"
       end
